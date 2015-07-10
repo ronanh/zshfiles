@@ -1,0 +1,3 @@
+boot2docker_shellinit() {
+  eval "$(boot2docker shellinit)"
+}

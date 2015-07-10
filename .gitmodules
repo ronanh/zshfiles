@@ -1,0 +1,18 @@
+[submodule "home/.oh-my-zsh"]
+	path = home/.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.tmux/plugins/tmux-sensible"]
+	path = home/.tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule "home/.tmux/plugins/tmux-pain-control"]
+	path = home/.tmux/plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control.git
+[submodule "home/.tmux/plugins/tmux-plugin-manager"]
+	path = home/.tmux/plugins/tmux-plugin-manager
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "home/.tmux/plugins/tmux-yank"]
+	path = home/.tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank.git
+[submodule "home/.tmux/plugins/tmux-copycat"]
+	path = home/.tmux/plugins/tmux-copycat
+	url = https://github.com/tmux-plugins/tmux-copycat.git

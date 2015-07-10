@@ -1,0 +1,16 @@
+
+set_proxy() {
+  PROXY_PORT=${PROXY_PORT:-8080}
+  HTTP_PROXY_USER=${HTTP_PROXY_USER:-`whoami`}
+  [ -n "$HTTP_PROXY_PASS"  ] || echo "Please Enter Proxy credentials"
+  [ -n "$HTTP_PROXY_USER"  ] || read "HTTP_PROXY_USER?Username: "
+  [ -n "$HTTP_PROXY_PASS"  ] || read -s "HTTP_PROXY_PASS?Password ($HTTP_PROXY_USER): "
+
+  export http_proxy="http://$HTTP_PROXY_USER:$HTTP_PROXY_PASS@$PROXY_HOST:$PROXY_PORT"
+  export https_proxy="http://$HTTP_PROXY_USER:$HTTP_PROXY_PASS@$PROXY_HOST:$PROXY_PORT"
+}
+
+unset_proxy () {
+  unset http_proxy
+  unset https_proxy
+}
