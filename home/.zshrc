@@ -58,6 +58,8 @@ export EDITOR="vim"
 
 # Vi mode
 bindkey -v
+#emacs mode
+#bindkey -e
 
 # remap Escape to jk
 bindkey -M viins 'jk' vi-cmd-mode
