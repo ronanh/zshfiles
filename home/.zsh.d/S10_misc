@@ -2,7 +2,7 @@
 # requires entr:
 # brew install entr
 watch_entr() {
-  while sleep 1; do ls -1 **/* | entr -d $@; done
+  while sleep 1; do find . -type f | entr -d $@; done
 }
 
 alias we=watch_entr
